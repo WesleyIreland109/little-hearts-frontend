@@ -1,0 +1,46 @@
+.header {
+  background-color: #FFE3E3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  flex-wrap: wrap;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Pacifico', cursive;
+  color: #38617B;
+}
+
+.logoTitle {
+  font-size: 2rem; /* increased for visibility */
+  margin: 0;
+  line-height: 1.1;
+}
+
+.logoSubtitle {
+  font-size: 1.2rem; /* increased for visibility */
+  margin: 0;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* more breathing room */
+  padding: 0;
+  margin: 0;
+}
+
+.navList a {
+  color: #38617B;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem; /* ensure readability */
+}
+
+.navList a:hover {
+  text-decoration: underline;
+}

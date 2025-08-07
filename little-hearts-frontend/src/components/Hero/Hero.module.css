@@ -1,0 +1,23 @@
+.hero {
+  background-color: #FFE3E3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px); /* adjust based on your header height */
+  text-align: center;
+  padding: 2rem;
+}
+
+.logoImage {
+  width: 300px; /* increased for prominence */
+  max-width: 90%;
+  margin-bottom: 2rem;
+}
+
+.tagline {
+  font-family: 'Pacifico', cursive;
+  color: #38617B;
+  font-size: 1.8rem; /* increased for readability */
+  font-weight: 500;
+}

@@ -1,4 +1,5 @@
 import styles from './Header.module.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -9,13 +10,13 @@ const Header = () => {
       </div>
       <nav>
         <ul className={styles.navList}>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Programs</a></li>
-          <li><a href="#">Enrollment</a></li>
-          <li><a href="#">Donate/Partner</a></li>
-          <li><a href="#">For Parents</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/programs">Programs</Link></li>
+          <li><Link to="/enrollment">Enrollment</Link></li>
+          <li><Link to="/get-involved">Donate/Partner</Link></li>
+          <li><Link to="/for-parents">For Parents</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
     </header>

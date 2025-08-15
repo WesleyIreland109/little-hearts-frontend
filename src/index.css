@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 :root {
-  font-family: 'Pacifico', cursive;
   line-height: 1.5;
-  font-weight: 400;
-  background-color: #FFE3E3;
+  background-color: #FF36E5;
   color: #38617B;
 }
 
@@ -10,8 +9,8 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #FFE3E3;
-  font-family: 'Pacifico', cursive;
+  background-color: #FFE6E5;
+  /* font-family removed for local control */
 }
 
 body {
@@ -21,10 +20,11 @@ body {
   justify-content: flex-start;
   min-width: 320px;
   min-height: 100vh;
+  /* font-family removed for local control */
 }
 
-a {
-  font-weight: 500;
+ a {
+  /* font-weight removed for local control */
   color: #38617B;
   text-decoration: none;
 }
@@ -33,9 +33,10 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0.5rem 0;
+  /* font-family removed for local control */
 }
 
 button {
@@ -43,8 +44,7 @@ button {
   border: none;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
-  font-family: 'Pacifico', cursive;
+  /* font-weight and font-family removed for local control */
   background-color: #38617B;
   color: white;
   cursor: pointer;

@@ -1,46 +1,95 @@
 .header {
-  background-color: #FFE3E3;
+  background-color: #FFE6E5;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3rem;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2rem 4rem 1rem 2rem;
+  width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
-.logoSection {
+
+ .logoSection {
   display: flex;
-  flex-direction: column;
-  font-family: 'Pacifico', cursive;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-shrink: 0;
+  font-family: 'Oswald', sans-serif;
   color: #38617B;
+  margin-right: 2.5rem;
 }
 
-.logoTitle {
-  font-size: 2rem; /* increased for visibility */
+.logoImg {
+  height: 220px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+ .logoTitle {
+  font-size: 2rem;
   margin: 0;
   line-height: 1.1;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
 }
 
-.logoSubtitle {
-  font-size: 1.2rem; /* increased for visibility */
+ .logoSubtitle {
+  font-size: 1.2rem;
   margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
 }
 
 .navList {
-  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem; /* more breathing room */
-  padding: 0;
+  gap: 3.5rem;
+  list-style: none;
   margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #38617B;
+  align-items: flex-start;
 }
 
-.navList a {
+ .navList a {
+  text-decoration: none;
+  color: #38617B;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: font-weight 0.2s, color 0.2s;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.navList a.active {
+  font-weight: 700;
   color: #38617B;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem; /* ensure readability */
+  border-bottom: 2px solid #38617B;
 }
 
 .navList a:hover {
+  color: #2c3e50;
+  text-shadow: 0 2px 8px rgba(74, 90, 106, 0.15);
   text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2vw;
+  }
+  .logoImg {
+    height: 100px;
+  }
+  .navList {
+    gap: 1rem;
+  }
 }

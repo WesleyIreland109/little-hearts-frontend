@@ -1,22 +1,47 @@
 import styles from './Header.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import NavBarLogo from '../../assets/Nav_Bar_Logo.png';
 
 const Header = () => {
+  const location = useLocation();
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
+  const navLinks = [
+    { to: '/', label: 'HOME' },
+    { to: '/about', label: 'ABOUT US' },
+    { to: '/programs', label: 'PROGRAMS' },
+    { to: '/enrollment', label: 'ENROLLMENT' },
+    { to: '/get-involved', label: 'GET INVOLVED' },
+    { to: '/for-parents', label: 'FOR PARENTS' },
+    { to: '/contact', label: 'CONTACT' },
+  ];
   return (
     <header className={styles.header}>
       <div className={styles.logoSection}>
-        <h1 className={styles.logoTitle}>Little Hearts</h1>
-        <p className={styles.logoSubtitle}>Childcare Foundation</p>
+        <img src={NavBarLogo} alt="Little Hearts Logo" className={styles.logoImg} />
       </div>
       <nav>
         <ul className={styles.navList}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/programs">Programs</Link></li>
-          <li><Link to="/enrollment">Enrollment</Link></li>
-          <li><Link to="/get-involved">Donate/Partner</Link></li>
-          <li><Link to="/for-parents">For Parents</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          {navLinks.map(link => (
+            <li key={link.to}>
+              <Link
+                to={link.to}
+                className={
+                  location.pathname === link.to ? `${styles.active} ${styles.navList}a` : `${styles.navList}a`
+                }
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

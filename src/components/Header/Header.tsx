@@ -7,15 +7,17 @@ import NavBarLogo from '../../assets/Nav_Bar_Logo.png';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  
   useEffect(() => {
     const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+    link.href = 'https://fonts.googleapis.com/css?family=Montserrat:400,500,700&family=Oswald:300,400,700';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
     return () => {
       document.head.removeChild(link);
     };
   }, []);
+
   const navLinks = [
     { to: '/', label: 'HOME' },
     { to: '/about', label: 'ABOUT US' },
@@ -25,20 +27,21 @@ const Header = () => {
     { to: '/for-parents', label: 'FOR PARENTS' },
     { to: '/contact', label: 'CONTACT' },
   ];
+
   return (
     <header className={styles.header}>
-      <div className={styles.headerTop}>
-        <div className={styles.logoSection}>
-          <img src={NavBarLogo} alt="Little Hearts Logo" className={styles.logoImg} />
-        </div>
-        <button
-          className={styles.menuButton}
-          onClick={() => setMenuOpen(prev => !prev)}
-          aria-label="Toggle navigation menu"
-        >
-          <span className={styles.menuIcon}>&#9776;</span>
-        </button>
+      <div className={styles.logoSection}>
+        <img src={NavBarLogo} alt="Little Hearts Logo" className={styles.logoImg} />
       </div>
+      
+      <button
+        className={styles.menuButton}
+        onClick={() => setMenuOpen(prev => !prev)}
+        aria-label="Toggle navigation menu"
+      >
+        <span className={styles.menuIcon}>&#9776;</span>
+      </button>
+
       <nav>
         <ul className={`${styles.navList} ${menuOpen ? styles.open : ''}`}>
           {navLinks.map(link => (
@@ -46,7 +49,7 @@ const Header = () => {
               <Link
                 to={link.to}
                 className={
-                  location.pathname === link.to ? `${styles.active} ${styles.navList}a` : `${styles.navList}a`
+                  location.pathname === link.to ? `${styles.navList}a ${styles.active}` : `${styles.navList}a`
                 }
                 onClick={() => setMenuOpen(false)}
               >

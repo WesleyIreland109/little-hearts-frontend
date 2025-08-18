@@ -1,0 +1,159 @@
+.homeContainer {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  overflow: hidden;
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.mainLogo {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 8px rgba(56, 97, 123, 0.1));
+}
+
+.mainTitle {
+  font-family: 'Oswald', sans-serif;
+  color: #38617B;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(56, 97, 123, 0.1);
+}
+
+.mainDescription {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  color: #38617B;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary, .btnSecondary {
+  padding: 0.875rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 140px;
+}
+
+.btnPrimary {
+  background-color: #38617B;
+  color: white;
+}
+
+.btnPrimary:hover {
+  background-color: #2c4a5e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 97, 123, 0.3);
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: #38617B;
+  border: 2px solid #38617B;
+}
+
+.btnSecondary:hover {
+  background-color: #38617B;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 97, 123, 0.3);
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    height: calc(100vh - 70px);
+  }
+  
+  .heroSection {
+    padding: 1rem;
+  }
+
+  .mainLogo {
+    max-width: 250px;
+    margin-bottom: 0.5rem;
+  }
+
+  .mainTitle {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .mainDescription {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btnPrimary, .btnSecondary {
+    width: 180px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainTitle {
+    font-size: 1.6rem;
+  }
+
+  .mainDescription {
+    font-size: 0.95rem;
+  }
+
+  .mainLogo {
+    max-width: 200px;
+  }
+  
+  .btnPrimary, .btnSecondary {
+    width: 160px;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}

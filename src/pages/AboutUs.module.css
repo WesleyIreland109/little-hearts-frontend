@@ -1,0 +1,180 @@
+.aboutContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: calc(80px + 2rem);
+}
+
+.missionSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 4rem auto;
+  min-height: 70vh;
+}
+
+.missionContent {
+  text-align: center;
+  width: 100%;
+}
+
+.missionTitle {
+  font-family: 'Dancing Script', cursive;
+  color: #38617B;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(56, 97, 123, 0.1);
+}
+
+.missionText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #38617B;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.missionText strong {
+  font-weight: 700;
+  color: #38617B;
+}
+
+/* Services Section */
+.servicesSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.servicesContent {
+  text-align: center;
+  width: 100%;
+}
+
+.servicesTitle {
+  font-family: 'Dancing Script', cursive;
+  color: #38617B;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(56, 97, 123, 0.1);
+}
+
+.servicesList {
+  margin-bottom: 2rem;
+}
+
+.serviceItem {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #38617B;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.specialNote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #38617B;
+  font-weight: 700;
+  font-style: italic;
+  margin: 2rem auto;
+  letter-spacing: 0.5px;
+}
+
+.serviceDetail {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #38617B;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 1.5rem auto;
+  max-width: 900px;
+  letter-spacing: 0.5px;
+}
+
+.policyLink {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #38617B;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  letter-spacing: 0.5px;
+}
+
+.linkText {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 1.5rem;
+    padding-top: calc(70px + 1.5rem);
+  }
+
+  .missionSection {
+    margin-bottom: 3rem;
+    min-height: auto;
+  }
+
+  .missionTitle, .servicesTitle {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .missionText, .serviceDetail, .specialNote, .policyLink {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .serviceItem {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutContainer {
+    padding: 1rem;
+    padding-top: calc(70px + 1rem);
+  }
+
+  .missionSection {
+    margin-bottom: 2rem;
+  }
+
+  .missionTitle, .servicesTitle {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .missionText, .serviceDetail, .specialNote, .policyLink {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .serviceItem {
+    font-size: 0.95rem;
+  }
+}

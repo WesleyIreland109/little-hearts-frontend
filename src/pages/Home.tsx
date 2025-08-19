@@ -1,4 +1,4 @@
-import MainPageLogo from '../assets/Main_Page_Logo.png';
+import TransparentLogo from '../assets/Transparent_Logo.png';
 import styles from './Home.module.css';
 
 const Home = () => (
@@ -6,7 +6,7 @@ const Home = () => (
     <section className={styles.heroSection}>
       <div className={styles.heroContent}>
         <img
-          src={MainPageLogo}
+          src={TransparentLogo}
           alt="Little Hearts Main Logo"
           className={styles.mainLogo}
         />

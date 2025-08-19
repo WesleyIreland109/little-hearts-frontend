@@ -1,12 +1,14 @@
 import styles from './Header.module.css';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import NavBarLogo from '../../assets/Nav_Bar_Logo.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [dropdownTimeout, setDropdownTimeout] = useState<number | null>(null);
   const location = useLocation();
+  const navigate = useNavigate();
   
   useEffect(() => {
     const link = document.createElement('link');
@@ -20,7 +22,7 @@ const Header = () => {
 
   const navLinks = [
     { to: '/', label: 'HOME' },
-    { to: '/about', label: 'ABOUT US' },
+    { to: '/about', label: 'ABOUT US', hasDropdown: true },
     { to: '/programs', label: 'PROGRAMS' },
     { to: '/enrollment', label: 'ENROLLMENT' },
     { to: '/get-involved', label: 'GET INVOLVED' },
@@ -28,12 +30,92 @@ const Header = () => {
     { to: '/contact', label: 'CONTACT' },
   ];
 
+  const handleDropdownEnter = () => {
+    if (dropdownTimeout) {
+      clearTimeout(dropdownTimeout);
+      setDropdownTimeout(null);
+    }
+    setAboutDropdownOpen(true);
+  };
+
+  const handleDropdownLeave = () => {
+    const timeout = setTimeout(() => {
+      setAboutDropdownOpen(false);
+    }, 200);
+    setDropdownTimeout(timeout);
+  };
+
+  const handleAboutNavigation = (section: string) => {
+    navigate('/about');
+    setTimeout(() => {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+    setAboutDropdownOpen(false);
+    setMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
-      <div className={styles.logoSection}>
-        <img src={NavBarLogo} alt="Little Hearts Logo" className={styles.logoImg} />
-      </div>
-      
+      <nav>
+        <ul className={`${styles.navList} ${menuOpen ? styles.open : ''}`}>
+          {navLinks.map(link => (
+            <li 
+              key={link.to}
+              className={link.hasDropdown ? styles.dropdownContainer : ''}
+              onMouseEnter={() => link.hasDropdown && !menuOpen && handleDropdownEnter()}
+              onMouseLeave={() => link.hasDropdown && !menuOpen && handleDropdownLeave()}
+            >
+              {link.hasDropdown ? (
+                <>
+                  <Link
+                    to={link.to}
+                    className={
+                      location.pathname === link.to ? `${styles.navList}a ${styles.active}` : `${styles.navList}a`
+                    }
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                  {aboutDropdownOpen && !menuOpen && (
+                    <div 
+                      className={styles.dropdown}
+                      onMouseEnter={handleDropdownEnter}
+                      onMouseLeave={handleDropdownLeave}
+                    >
+                      <button 
+                        className={styles.dropdownItem}
+                        onClick={() => handleAboutNavigation('mission-section')}
+                      >
+                        ABOUT US
+                      </button>
+                      <button 
+                        className={styles.dropdownItem}
+                        onClick={() => handleAboutNavigation('services-section')}
+                      >
+                        SERVICES WE OFFER
+                      </button>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <Link
+                  to={link.to}
+                  className={
+                    location.pathname === link.to ? `${styles.navList}a ${styles.active}` : `${styles.navList}a`
+                  }
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+
       <button
         className={styles.menuButton}
         onClick={() => setMenuOpen(prev => !prev)}
@@ -41,24 +123,6 @@ const Header = () => {
       >
         <span className={styles.menuIcon}>&#9776;</span>
       </button>
-
-      <nav>
-        <ul className={`${styles.navList} ${menuOpen ? styles.open : ''}`}>
-          {navLinks.map(link => (
-            <li key={link.to}>
-              <Link
-                to={link.to}
-                className={
-                  location.pathname === link.to ? `${styles.navList}a ${styles.active}` : `${styles.navList}a`
-                }
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
     </header>
   );
 };

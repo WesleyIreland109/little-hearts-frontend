@@ -1,0 +1,118 @@
+.contactContainer {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-color: #ffffff;
+  padding: 4rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #38617B;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.formSection {
+  margin-bottom: 3rem;
+  background-color: #38617B;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(56, 97, 123, 0.4);
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.input,
+.textarea {
+  margin-top: 0.5rem;
+  width: 320px;
+  max-width: 90vw;
+  padding: 0.75rem 1rem;
+  border-radius: 16px;
+  border: 2px solid #ffffff;
+  box-shadow: 6px 6px 0 #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #ffffff;
+}
+
+.helperText {
+  height: 0.75rem;
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+}
+
+.infoSection {
+  max-width: 900px;
+}
+
+.infoText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  color: #38617B;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    padding: 3rem 1.5rem 2.5rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .input,
+  .textarea {
+    width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .input,
+  .textarea {
+    width: 220px;
+  }
+}

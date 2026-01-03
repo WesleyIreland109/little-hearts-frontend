@@ -1,4 +1,4 @@
-.enrollmentPage {
+.container {
   width: 100%;
   min-height: calc(100vh - 80px);
   background-color: #ffffff;
@@ -11,7 +11,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.preEnrollmentTitle {
+.heroSection {
+  margin-bottom: 3rem;
+}
+
+.mainTitle {
   font-family: 'Dancing Script', cursive;
   color: #38617B;
   font-size: 4rem;
@@ -28,70 +32,86 @@
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin-bottom: 2.5rem;
 }
 
-.buttonRow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 3rem;
+.contentSection {
+  max-width: 900px;
 }
 
-.preEnrollmentButton {
-  background-color: #38617B;
-  color: #ffffff;
-  padding: 1.1rem 3.5rem;
+.thankYouTitle {
   font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
-  border-radius: 0;
-  border: none;
-  cursor: pointer;
-  letter-spacing: 0.08em;
-  box-shadow: 0 14px 28px rgba(56, 97, 123, 0.45);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  color: #38617B;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 3rem 0 0.75rem;
+  line-height: 1.2;
 }
 
-.preEnrollmentButton:hover {
-  background-color: #2c4a5e;
-  transform: translateY(-3px);
-  box-shadow: 0 18px 32px rgba(56, 97, 123, 0.55);
-}
-
-.offerText {
+.thankYouSubtitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #38617B;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.targetOpeningTitle {
+.callToActionRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.donateButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #38617B;
+  color: #ffffff;
+  padding: 1.1rem 3.5rem;
   font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 0;
+  letter-spacing: 0.08em;
+  box-shadow: 0 14px 28px rgba(56, 97, 123, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.donateButton:hover {
+  background-color: #2c4a5e;
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 18px 32px rgba(56, 97, 123, 0.55);
+}
+
+.disclaimer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
   color: #38617B;
-  font-size: 2.8rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  line-height: 1.4;
+  margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
-  .enrollmentPage {
+  .container {
     padding: 3rem 1.5rem 2.5rem;
   }
 
-  .preEnrollmentTitle {
+  .mainTitle {
     font-size: 2.8rem;
   }
 
-  .targetOpeningTitle {
+  .thankYouTitle {
     font-size: 2.2rem;
   }
 
-  .preEnrollmentButton {
+  .donateButton {
     width: 220px;
   }
 }

@@ -1,18 +1,18 @@
 .homeContainer {
   width: 100%;
   height: calc(100vh - 80px);
-  background-color: #ffffff;
+  background-color: #ffffff; /* white like template */
   overflow: hidden;
 }
 
 .heroSection {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* vertically center */
   justify-content: center;
   height: 100%;
   width: 100%;
   background-color: #ffffff;
-  padding: 0.5rem 2rem 1rem 2rem;
+  padding: 0 2rem;
   overflow: hidden;
 }
 
@@ -23,37 +23,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   height: 100%;
-  margin-top: 0.25rem;
 }
 
 .mainLogo {
-  max-width: 600px;
+  max-width: 620px;
   width: 100%;
   height: auto;
-  margin-bottom: 0.5rem;
-  filter: drop-shadow(0 4px 8px rgba(56, 97, 123, 0.1));
+  margin-bottom: 0; /* no text below, so no extra spacing */
+  filter: none;
 }
 
 .mainTitle {
-  font-family: 'Oswald', sans-serif;
-  color: #38617B;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  line-height: 1.1;
-  text-shadow: 0 2px 4px rgba(56, 97, 123, 0.1);
+  display: none; /* no title under logo in reference */
 }
 
 .mainDescription {
-  font-family: 'Montserrat', sans-serif;
-  max-width: 600px;
-  margin: 0 auto 1rem;
-  font-size: 1.1rem;
-  color: #38617B;
-  line-height: 1.5;
-  font-weight: 400;
+  display: none; /* remove descriptive text under logo */
 }
 
 @media (max-width: 768px) {
@@ -62,42 +49,16 @@
   }
   
   .heroSection {
-    padding: 0.5rem 1rem;
-    align-items: flex-start;
-  }
-
-  .heroContent {
-    margin-top: 0.5rem;
-    justify-content: flex-start;
+    padding: 0 1rem;
   }
 
   .mainLogo {
-    max-width: 500px;
-    margin-bottom: 0.5rem;
-  }
-
-  .mainTitle {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .mainDescription {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    line-height: 1.4;
+    max-width: 480px;
   }
 }
 
 @media (max-width: 480px) {
-  .mainTitle {
-    font-size: 1.6rem;
-  }
-
-  .mainDescription {
-    font-size: 0.95rem;
-  }
-
   .mainLogo {
-    max-width: 400px;
+    max-width: 360px;
   }
 }

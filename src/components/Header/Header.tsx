@@ -1,7 +1,6 @@
 import styles from './Header.module.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +11,7 @@ const Header = () => {
   
   useEffect(() => {
     const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css?family=Montserrat:400,500,700&family=Oswald:300,400,700';
+    link.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@300;400;500;700&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
     return () => {
@@ -59,6 +58,11 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
+      <div className={styles.logoSection}>
+        <h1 className={styles.logoTitle}>Little Hearts</h1>
+        <h2 className={styles.logoSubtitle}>Childcare Foundation</h2>
+      </div>
+
       <nav>
         <ul className={`${styles.navList} ${menuOpen ? styles.open : ''}`}>
           {navLinks.map(link => (

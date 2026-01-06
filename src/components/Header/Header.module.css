@@ -2,15 +2,15 @@
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* brand left, nav center/right */
   height: 80px;
-  padding: 0 2rem;
+  padding: 0 3rem;
   width: 100%;
   box-sizing: border-box;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(56, 97, 123, 0.1);
+  box-shadow: none; /* reference has no visible shadow */
 }
 
 .headerTop {
@@ -20,45 +20,43 @@
 
 .logoSection {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; /* anchor to very top */
   flex-shrink: 0;
-  font-family: 'Oswald', sans-serif;
-  color: #38617B;
+  font-family: 'Great Vibes', cursive;
+  color: #aba991;
+  margin-top: 0.4rem; /* pull script closer to very top like reference */
 }
 
 .logoImg {
-  height: 60px;
-  width: auto;
-  margin-right: 1rem;
-  max-width: none;
-  box-sizing: border-box;
+  display: none; /* logo not shown in header in reference */
 }
 
 .logoTitle {
-  font-size: 1.25rem;
+  font-size: 2.6rem; /* slightly smaller to look less blocky */
   margin: 0;
-  line-height: 1.1;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  line-height: 1;
+  font-weight: 400;
 }
 
 .logoSubtitle {
-  font-size: 1.2rem;
+  font-size: 2.3rem;
   margin: 0;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  margin-top: -0.6rem; /* overlap a bit more for handwritten feel */
 }
 
 .navList {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #38617B;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #acab93; /* unselected tab color */
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
@@ -82,7 +80,7 @@
   left: 50%;
   transform: translateX(-50%);
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(56, 97, 123, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   padding: 0.5rem 0;
   min-width: 200px;
@@ -100,7 +98,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 0.85rem;
   font-weight: 500;
-  color: #38617B;
+  color: #acab93;
   cursor: pointer;
   transition: background-color 0.2s ease;
   text-transform: uppercase;
@@ -108,7 +106,7 @@
 }
 
 .dropdownItem:hover {
-  background-color: rgba(56, 97, 123, 0.1);
+  background-color: rgba(172, 171, 147, 0.12);
 }
 
 .mobileDropdown {
@@ -140,12 +138,12 @@
 
 .navList a {
   text-decoration: none;
-  color: #38617B;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: all 0.2s ease;
-  padding: 0.75rem 0.8rem;
-  border-radius: 4px;
+  color: #acab93; /* unselected tab color */
+  font-weight: 600;
+  letter-spacing: 0.18em; /* slightly more spaced, like Canva */
+  transition: color 0.2s ease;
+  padding: 0.75rem 0.3rem;
+  border-radius: 0;
   text-transform: uppercase;
   font-size: 0.85rem;
   position: relative;
@@ -157,35 +155,22 @@
   min-width: fit-content;
 }
 
-.menuButton {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: #38617B;
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 4px;
-}
-
-.menuButton:hover {
-  background-color: rgba(56, 97, 123, 0.1);
-}
-
-.menuIcon {
-  display: inline-block;
-}
-
+/* Selected tab: stronger emphasis, no background */
 .navList a.active {
-  font-weight: 700;
-  color: #38617B;
-  background-color: rgba(56, 97, 123, 0.1);
+  font-weight: 800; /* bolder than others */
+  color: #acaa92; /* selected tab color */
+  background-color: transparent;
 }
 
+/* Hover: keep lighter than selected to preserve contrast */
 .navList a:hover {
-  color: #2c3e50;
-  background-color: rgba(56, 97, 123, 0.05);
-  transform: translateY(-1px);
+  color: #acaa92;
+  background-color: transparent;
+  transform: none;
+}
+
+.menuButton {
+  display: none; /* desktop only for now to match reference */
 }
 
 .open {
@@ -196,7 +181,7 @@
   left: 0;
   width: 100vw;
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(56, 97, 123, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   gap: 0;
   padding: 1rem 0;
   z-index: 999;
@@ -215,76 +200,43 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     height: 70px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
   }
-  
-  nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+  .logoTitle {
+    font-size: 2.1rem;
   }
-  
+
+  .logoSubtitle {
+    font-size: 1.9rem;
+    margin-top: -0.4rem;
+  }
+
   .menuButton {
     display: block;
-    position: fixed;
-    right: 1rem;
-    top: 1rem;
-    z-index: 1002;
-    background: #ffffff;
-    box-shadow: 0 2px 8px rgba(56, 97, 123, 0.15);
+    background: none;
     border: none;
-    padding: 0.5rem;
-    border-radius: 4px;
     font-size: 1.8rem;
-    color: #38617B;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #acab93;
   }
-  
+
   .navList {
     display: none;
-    gap: 0;
-    font-size: 1rem;
+  }
+
+  .navList.open {
+    display: flex !important;
     flex-direction: column;
     width: 100vw;
     background: #ffffff;
     position: absolute;
     top: 100%;
     left: 0;
-    box-shadow: 0 4px 12px rgba(56, 97, 123, 0.15);
-    z-index: 999;
     padding: 1rem 0;
-    justify-content: center;
-    align-items: center;
   }
-  
-  .navList li {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .navList a {
     padding: 1rem 2rem;
-    text-align: center;
-    width: 100%;
-    border-radius: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-  }
-  
-  .navList.open {
-    display: flex !important;
   }
 }

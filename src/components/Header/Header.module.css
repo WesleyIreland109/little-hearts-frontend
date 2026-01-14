@@ -26,7 +26,7 @@
   flex-shrink: 0;
   font-family: 'Elegant', 'Brush Script MT', 'Segoe Script', 'Lucida Handwriting', cursive !important; /* widely available cursive stack */
   color: #aba991;
-  margin-top: 5.4rem; /* pull script closer to very top like reference */
+  margin-top: 4.4rem; /* pull script closer to very top like reference */
   margin-right: 0rem; /* Reduced right margin for spacing */
 }
 
@@ -40,7 +40,7 @@
 }
 
 .logoTitle {
-  font-size: 2.1rem; /* Reduce size and make script bolder for legibility */
+  font-size: 1.1rem; /* Reduce size and make script bolder for legibility */
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 0.4rem 0; /* Increased bottom margin for spacing */
@@ -211,7 +211,7 @@
   }
 
   .logoTitle {
-    font-size: 2.1rem;
+    font-size: 1.1rem;
   }
 
   .logoSubtitle {

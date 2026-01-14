@@ -49,8 +49,8 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logoSection}>
-        <h1 className={styles.logoTitle}>Little Hearts</h1>
-        <h2 className={styles.logoSubtitle}>Childcare Foundation</h2>
+        <h1 className={styles.logoTitle}>Little Hearts Childcare Foundation</h1>
+        <h2 className={styles.logoSubtitle}></h2>
       </div>
 
       <nav>

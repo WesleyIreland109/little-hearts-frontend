@@ -145,7 +145,7 @@
 .navList a {
   text-decoration: none;
   color: #acab93; /* unselected tab color */
-  font-weight: 600;
+  font-weight: 500; /* slightly reduced weight for unselected tabs */
   letter-spacing: 0.18em; /* slightly more spaced, like Canva */
   transition: color 0.2s ease;
   padding: 0.75rem 0.3rem;
@@ -163,7 +163,7 @@
 
 /* Selected tab: stronger emphasis, no background */
 .navList a.active {
-  font-weight: 800; /* bolder than others */
+  font-weight: 900; /* dramatically bolder */
   color: #acaa92; /* selected tab color */
   background-color: transparent;
 }

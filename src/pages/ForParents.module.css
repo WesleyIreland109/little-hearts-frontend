@@ -1,0 +1,219 @@
+.container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-color: #ffffff;
+  padding: 0 2rem 4rem 2rem;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Top DONATIONS banner */
+.bannerSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.bannerWrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.bannerTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #acab93;
+  padding: 1.2rem 3.5rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+/* Main content */
+.contentSection {
+  max-width: 900px;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+}
+
+.mainHeading {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #7f7b5a;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+
+.subHeading {
+  font-size: 1rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+}
+
+.buttonRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+
+.donateButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #acab93;
+  color: #ffffff;
+  padding: 0.9rem 3.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.donateButton:hover {
+  background-color: #acaa92;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 22px 36px rgba(0, 0, 0, 0.24);
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+/* New For Parents guide section */
+.parentsGuideSection {
+  max-width: 900px;
+  margin: 6rem auto 0 auto;
+  text-align: center;
+}
+
+.parentsGuideIntro {
+  font-size: 1rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.parentsGuideButtonRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parentsGuideButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #acab93;
+  color: #ffffff;
+  padding: 0.9rem 3.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.18);
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: calc(100vh - 70px);
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+
+  .bannerTitle {
+    font-size: 1.4rem;
+    padding: 1.1rem 3rem;
+    letter-spacing: 0.2em;
+  }
+
+  .mainHeading {
+    font-size: 1.3rem;
+  }
+
+  .donateButton {
+    font-size: 1.05rem;
+    padding: 0.85rem 2.8rem;
+  }
+
+  .disclaimer {
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+  }
+
+  .parentsGuideSection {
+    margin-top: 5rem;
+  }
+
+  .parentsGuideIntro {
+    font-size: 0.95rem;
+    letter-spacing: 0.16em;
+  }
+
+  .parentsGuideButton {
+    font-size: 1.05rem;
+    padding: 0.85rem 2.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem 3rem 1rem;
+  }
+
+  .bannerTitle {
+    font-size: 1.2rem;
+    padding: 0.9rem 2.4rem;
+    letter-spacing: 0.18em;
+  }
+
+  .mainHeading {
+    font-size: 1.15rem;
+  }
+
+  .donateButton {
+    font-size: 1rem;
+    padding: 0.8rem 2.4rem;
+  }
+
+  .disclaimer {
+    font-size: 0.8rem;
+  }
+
+  .parentsGuideIntro {
+    font-size: 0.9rem;
+    letter-spacing: 0.14em;
+  }
+
+  .parentsGuideButton {
+    font-size: 1rem;
+    padding: 0.8rem 2.4rem;
+  }
+}

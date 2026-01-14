@@ -1,0 +1,120 @@
+.programsContainer {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-color: #ffffff;
+  padding: 0 2rem 4rem 2rem;
+  box-sizing: border-box;
+}
+
+.bannerSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.bannerWrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.bannerTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #acab93;
+  padding: 1.2rem 3.5rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+.classroomsSection {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+
+.classroomCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.classroomImage {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.classroomTitle {
+  margin-top: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #7f7b5a;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .programsContainer {
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+
+  .classroomsSection {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .programsContainer {
+    min-height: calc(100vh - 70px);
+  }
+
+  .bannerTitle {
+    font-size: 1.4rem;
+    padding: 1.1rem 3rem;
+    letter-spacing: 0.2em;
+  }
+
+  .classroomImage {
+    width: 220px;
+    height: 220px;
+  }
+
+  .classroomTitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .programsContainer {
+    padding: 0 1rem 2.5rem 1rem;
+  }
+
+  .bannerTitle {
+    font-size: 1.2rem;
+    padding: 0.9rem 2.4rem;
+    letter-spacing: 0.18em;
+  }
+
+  .classroomImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .classroomTitle {
+    font-size: 1.1rem;
+  }
+}

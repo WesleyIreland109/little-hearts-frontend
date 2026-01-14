@@ -10,25 +10,61 @@ const Enrollment: React.FC = () => {
 
   return (
     <div className={styles.enrollmentPage}>
-      <h1 className={styles.preEnrollmentTitle}>PRE-ENROLLMENT</h1>
+      {/* Top banner */}
+      <section className={styles.bannerSection}>
+        <div className={styles.bannerWrapper}>
+          <h1 className={styles.bannerTitle}>FOUNDING FAMILIES ENROLLMENT</h1>
+        </div>
+      </section>
 
-      <p className={styles.subTitle}>CLICK HERE TO PRE- ENROLL</p>
+      {/* Two-column content */}
+      <section className={styles.contentSection}>
+        {/* Left column: introductory paragraphs */}
+        <div className={styles.leftColumn}>
+          <p className={styles.enrollmentText}>
+            LITTLE HEARTS IS BEGINNING WITH A CAREFULLY PLANNED SOFT LAUNCH TO ENSURE THE HIGHEST LEVEL OF SAFETY, QUALITY, AND PERSONALIZED CARE.
+          </p>
 
-      <div className={styles.buttonRow}>
-        <button className={styles.preEnrollmentButton} onClick={handleClick}>
-          PRE-ENROLLMENT INTEREST FORM!
-        </button>
-      </div>
+          <p className={styles.enrollmentText}>
+            DURING THIS PHASE, WE ARE SERVING A SMALL GROUP OF CHILDREN IN ONE CLASSROOM, ALLOWING OUR TEAM TO BUILD STRONG RELATIONSHIPS, REFINE CARE ROUTINES, AND SUPPORT EACH CHILD&apos;S UNIQUE MEDICAL AND DEVELOPMENTAL NEEDS.
+          </p>
 
-      <p className={styles.offerText}>
-        WE OFFER FULL TIME, PART TIME, AND DROP IN CHILDCARE!
-      </p>
+          <p className={styles.enrollmentText}>
+            OUR INTENTIONAL APPROACH ENSURES FAMILIES RECEIVE THE LEVEL OF CARE AND COMMUNICATION THEY DESERVE FROM DAY ONE.
+          </p>
+        </div>
 
-      <h2 className={styles.targetOpeningTitle}>
-        TARGET OPENING
-        <br />
-        FALL 2026
-      </h2>
+        {/* Right column: pre-enrollment callout */}
+        <div className={styles.rightColumn}>
+          <p className={styles.calloutHeading}>
+            NOW ACCEPTING PRE-ENROLLMENT INTEREST FORMS!
+          </p>
+
+          <div className={styles.calloutButtonWrapper}>
+            <button
+              type="button"
+              className={styles.preEnrollmentButton}
+              onClick={handleClick}
+            >
+              PRE ENROLLMENT FORM
+            </button>
+          </div>
+
+          <p className={styles.calloutDetails}>
+            ENROLLING
+            <br />
+            6-8 CHILDREN
+            <br />
+            AGES 18 MONTHS TO 3 YEARS
+            <br />
+            PROGRAM HOURS: M-F, 7:30-3:30
+          </p>
+
+          <p className={styles.calloutFooter}>
+            EXPECTED LAUNCH FALL 2026
+          </p>
+        </div>
+      </section>
     </div>
   );
 };

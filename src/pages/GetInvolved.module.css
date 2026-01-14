@@ -2,116 +2,309 @@
   width: 100%;
   min-height: calc(100vh - 80px);
   background-color: #ffffff;
-  padding: 4rem 2rem 3rem;
+  padding: 0 2rem 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  color: #38617B;
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
-.heroSection {
+/* Top banner */
+.bannerSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.bannerWrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.bannerTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #acab93;
+  padding: 1.2rem 3.5rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+/* Content text */
+.contentSection {
+  max-width: 900px;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+}
+
+.mainLine {
+  font-size: 1rem;
+  color: #acab93;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.subLine {
+  font-size: 0.98rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.noteLine {
+  font-size: 0.9rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Other Ways to Get Involved section */
+.otherWaysSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 6rem auto 0 auto;
+  padding: 0 2rem 4rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.otherBannerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.otherBannerTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #acab93;
+  padding: 1.2rem 3.5rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+.otherList {
+  margin-top: 5rem;
+}
+
+.otherItem {
+  font-size: 1rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+}
+
+/* Careers section */
+.careersSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 6rem auto 0 auto;
+  padding: 0 2rem 4rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.careersBannerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.careersBannerTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #acab93;
+  padding: 1.2rem 3.5rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+.careersContent {
+  max-width: 900px;
+  margin: 4rem auto 0 auto;
+}
+
+.careersIntro {
+  font-size: 0.98rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.careersRoleBlock {
   margin-bottom: 3rem;
 }
 
-.mainTitle {
-  font-family: 'Dancing Script', cursive;
-  color: #38617B;
-  font-size: 4rem;
+.careersRoleTitle {
+  font-size: 1.1rem;
+  color: #acab93;
   font-weight: 700;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-  text-shadow: 0 2px 4px rgba(56, 97, 123, 0.1);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
 }
 
-.subTitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  color: #38617B;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+.careersRoleSubtitle {
+  font-size: 0.9rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
-.contentSection {
-  max-width: 900px;
-}
-
-.thankYouTitle {
-  font-family: 'Dancing Script', cursive;
-  color: #38617B;
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin: 3rem 0 0.75rem;
-  line-height: 1.2;
-}
-
-.thankYouSubtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  color: #38617B;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+.careersFooter {
+  font-size: 0.9rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: 2.5rem;
+  margin-top: 4rem;
 }
 
-.callToActionRow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2.5rem;
+.careersEmail {
+  color: #acab93;
+  text-decoration: underline;
 }
 
-.donateButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #38617B;
-  color: #ffffff;
-  padding: 1.1rem 3.5rem;
-  font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
+.careersEmail:hover {
   text-decoration: none;
-  border-radius: 0;
-  letter-spacing: 0.08em;
-  box-shadow: 0 14px 28px rgba(56, 97, 123, 0.45);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-}
-
-.donateButton:hover {
-  background-color: #2c4a5e;
-  color: #ffffff;
-  text-decoration: none;
-  transform: translateY(-3px);
-  box-shadow: 0 18px 32px rgba(56, 97, 123, 0.55);
-}
-
-.disclaimer {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
-  color: #38617B;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 3rem 1.5rem 2.5rem;
+    min-height: calc(100vh - 70px);
+    padding: 0 1.5rem 3rem 1.5rem;
   }
 
-  .mainTitle {
-    font-size: 2.8rem;
+  .bannerTitle {
+    font-size: 1.4rem;
+    padding: 1.1rem 3rem;
+    letter-spacing: 0.2em;
   }
 
-  .thankYouTitle {
-    font-size: 2.2rem;
+  .mainLine,
+  .subLine,
+  .noteLine {
+    font-size: 0.9rem;
+    letter-spacing: 0.16em;
   }
 
-  .donateButton {
-    width: 220px;
+  .otherWaysSection {
+    padding: 0 1.5rem 3rem 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .otherBannerTitle {
+    font-size: 1.4rem;
+    padding: 1.1rem 3rem;
+    letter-spacing: 0.2em;
+  }
+
+  .otherItem {
+    font-size: 0.9rem;
+    letter-spacing: 0.16em;
+    margin-bottom: 3rem;
+  }
+
+  .careersSection {
+    padding: 0 1.5rem 3rem 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .careersBannerTitle {
+    font-size: 1.4rem;
+    padding: 1.1rem 3rem;
+    letter-spacing: 0.2em;
+  }
+
+  .careersIntro,
+  .careersRoleTitle,
+  .careersRoleSubtitle,
+  .careersFooter {
+    font-size: 0.9rem;
+    letter-spacing: 0.16em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem 3rem 1rem;
+  }
+
+  .bannerTitle {
+    font-size: 1.2rem;
+    padding: 0.9rem 2.4rem;
+    letter-spacing: 0.18em;
+  }
+
+  .mainLine,
+  .subLine,
+  .noteLine {
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+  }
+
+  .otherWaysSection {
+    padding: 0 1rem 3rem 1rem;
+  }
+
+  .otherBannerTitle {
+    font-size: 1.2rem;
+    padding: 0.9rem 2.4rem;
+    letter-spacing: 0.18em;
+  }
+
+  .otherItem {
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+  }
+
+  .careersSection {
+    padding: 0 1rem 3rem 1rem;
+  }
+
+  .careersBannerTitle {
+    font-size: 1.2rem;
+    padding: 0.9rem 2.4rem;
+    letter-spacing: 0.18em;
+  }
+
+  .careersIntro,
+  .careersRoleTitle,
+  .careersRoleSubtitle,
+  .careersFooter {
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
   }
 }

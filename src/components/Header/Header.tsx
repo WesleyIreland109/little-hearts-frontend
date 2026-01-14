@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,16 +8,6 @@ const Header = () => {
   const [dropdownTimeout, setDropdownTimeout] = useState<number | null>(null);
   const location = useLocation();
   const navigate = useNavigate();
-  
-  useEffect(() => {
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@300;400;500;700&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&display=swap';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-    return () => {
-      document.head.removeChild(link);
-    };
-  }, []);
 
   const navLinks = [
     { to: '/', label: 'HOME' },

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between; /* brand left, nav center/right */
   height: 80px;
-  padding: 0 3rem;
+  padding: 2.3rem 3rem 0 3rem; /* Increased top padding */
   width: 100%;
   box-sizing: border-box;
   position: sticky;
@@ -24,27 +24,33 @@
   align-items: flex-start;
   justify-content: flex-start; /* anchor to very top */
   flex-shrink: 0;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Elegant', 'Brush Script MT', 'Segoe Script', 'Lucida Handwriting', cursive !important; /* widely available cursive stack */
   color: #aba991;
-  margin-top: 0.4rem; /* pull script closer to very top like reference */
+  margin-top: 5.4rem; /* pull script closer to very top like reference */
+  margin-right: 0rem; /* Reduced right margin for spacing */
 }
 
 .logoImg {
   display: none; /* logo not shown in header in reference */
 }
 
+.logoTitle,
+.logoSubtitle {
+  font-family: inherit !important; /* inherit Elegant from logoSection */
+}
+
 .logoTitle {
-  font-size: 2.6rem; /* slightly smaller to look less blocky */
-  margin: 0;
-  line-height: 1;
-  font-weight: 400;
+  font-size: 2.1rem; /* Reduce size and make script bolder for legibility */
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.4rem 0; /* Increased bottom margin for spacing */
 }
 
 .logoSubtitle {
-  font-size: 2.3rem;
-  margin: 0;
-  font-weight: 400;
-  margin-top: -0.6rem; /* overlap a bit more for handwritten feel */
+  font-size: 1.7rem; /* Slightly smaller subtitle, tighter spacing */
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 2rem; /* Reset margin to remove extra space */
 }
 
 .navList {

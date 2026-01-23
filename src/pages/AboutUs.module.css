@@ -182,20 +182,77 @@
   margin: 0 auto 3.5rem auto;
 }
 
+/* WHY LITTLE HEARTS IS SPECIAL section moved from Home */
+.whySection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 5rem auto 0 auto;
+  padding: 0 2rem 5rem 2rem;
+  box-sizing: border-box;
+}
+
+.whyTitleWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.whyTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #acab93;
+  padding: 1.2rem 3.5rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 6rem;
+  row-gap: 3.5rem;
+  max-width: 900px;
+  margin: 4rem auto 0 auto;
+}
+
+.whyItem {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.95rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .whyGrid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .aboutContainer {
     padding: 0 1.5rem 3rem 1.5rem;
-    padding-top: calc(70px + 2.5rem); /* extra offset so scrolled section is fully visible */
+    padding-top: calc(70px + 2.5rem);
   }
 
-  .missionTitle,
+  .whyTitle,
   .servicesTitle {
     font-size: 1.4rem;
     padding: 1.1rem 3rem;
     letter-spacing: 0.2em;
   }
 
-  .missionText,
+  .whyItem,
   .serviceDetail,
   .specialNote,
   .policyLink,
@@ -214,14 +271,14 @@
     padding-top: calc(70px + 2.5rem);
   }
 
-  .missionTitle,
+  .whyTitle,
   .servicesTitle {
     font-size: 1.2rem;
     padding: 0.9rem 2.4rem;
     letter-spacing: 0.18em;
   }
 
-  .missionText,
+  .whyItem,
   .serviceDetail,
   .specialNote,
   .policyLink,

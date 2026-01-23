@@ -73,6 +73,93 @@
   text-transform: uppercase;
 }
 
+/* Donations section moved from ForParents */
+.donationsSection {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.donationsInner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donationsTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #acab93;
+  padding: 1.2rem 3.5rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+.donationsMainHeading {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #7f7b5a;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.donationsSubHeading {
+  font-size: 1rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+}
+
+.donationsButtonRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+
+.donateButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #acab93;
+  color: #ffffff;
+  padding: 0.9rem 3.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.donateButton:hover {
+  background-color: #acaa92;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 22px 36px rgba(0, 0, 0, 0.24);
+}
+
+.donationsDisclaimer {
+  font-size: 0.9rem;
+  color: #acab93;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
 /* Other Ways to Get Involved section */
 .otherWaysSection {
   width: 100%;
@@ -207,7 +294,10 @@
     padding: 0 1.5rem 3rem 1.5rem;
   }
 
-  .bannerTitle {
+  .bannerTitle,
+  .donationsTitle,
+  .otherBannerTitle,
+  .careersBannerTitle {
     font-size: 1.4rem;
     padding: 1.1rem 3rem;
     letter-spacing: 0.2em;
@@ -215,45 +305,22 @@
 
   .mainLine,
   .subLine,
-  .noteLine {
-    font-size: 0.9rem;
-    letter-spacing: 0.16em;
-  }
-
-  .otherWaysSection {
-    padding: 0 1.5rem 3rem 1.5rem;
-    margin-top: 5rem;
-  }
-
-  .otherBannerTitle {
-    font-size: 1.4rem;
-    padding: 1.1rem 3rem;
-    letter-spacing: 0.2em;
-  }
-
-  .otherItem {
-    font-size: 0.9rem;
-    letter-spacing: 0.16em;
-    margin-bottom: 3rem;
-  }
-
-  .careersSection {
-    padding: 0 1.5rem 3rem 1.5rem;
-    margin-top: 5rem;
-  }
-
-  .careersBannerTitle {
-    font-size: 1.4rem;
-    padding: 1.1rem 3rem;
-    letter-spacing: 0.2em;
-  }
-
+  .noteLine,
+  .donationsMainHeading,
+  .donationsSubHeading,
+  .donationsDisclaimer,
+  .otherItem,
   .careersIntro,
   .careersRoleTitle,
   .careersRoleSubtitle,
   .careersFooter {
     font-size: 0.9rem;
     letter-spacing: 0.16em;
+  }
+
+  .donateButton {
+    font-size: 1.05rem;
+    padding: 0.85rem 2.8rem;
   }
 }
 
@@ -262,7 +329,10 @@
     padding: 0 1rem 3rem 1rem;
   }
 
-  .bannerTitle {
+  .bannerTitle,
+  .donationsTitle,
+  .otherBannerTitle,
+  .careersBannerTitle {
     font-size: 1.2rem;
     padding: 0.9rem 2.4rem;
     letter-spacing: 0.18em;
@@ -270,41 +340,21 @@
 
   .mainLine,
   .subLine,
-  .noteLine {
-    font-size: 0.85rem;
-    letter-spacing: 0.14em;
-  }
-
-  .otherWaysSection {
-    padding: 0 1rem 3rem 1rem;
-  }
-
-  .otherBannerTitle {
-    font-size: 1.2rem;
-    padding: 0.9rem 2.4rem;
-    letter-spacing: 0.18em;
-  }
-
-  .otherItem {
-    font-size: 0.85rem;
-    letter-spacing: 0.14em;
-  }
-
-  .careersSection {
-    padding: 0 1rem 3rem 1rem;
-  }
-
-  .careersBannerTitle {
-    font-size: 1.2rem;
-    padding: 0.9rem 2.4rem;
-    letter-spacing: 0.18em;
-  }
-
+  .noteLine,
+  .donationsMainHeading,
+  .donationsSubHeading,
+  .donationsDisclaimer,
+  .otherItem,
   .careersIntro,
   .careersRoleTitle,
   .careersRoleSubtitle,
   .careersFooter {
     font-size: 0.85rem;
     letter-spacing: 0.14em;
+  }
+
+  .donateButton {
+    font-size: 1rem;
+    padding: 0.8rem 2.4rem;
   }
 }

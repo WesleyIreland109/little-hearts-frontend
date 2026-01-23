@@ -18,29 +18,13 @@ const Home = () => (
         </p>
       </div>
     </section>
-    <section id="why-section" className={styles.whySection}>
-      <div className={styles.whyTitleWrapper}>
-        <h2 className={styles.whyTitle}>WHY LITTLE HEARTS IS SPECIAL</h2>
-      </div>
-      <div className={styles.whyGrid}>
-        <p className={styles.whyItem}>
-          SPECIALIZED CARE FOR MEDICALLY FRAGILE AND COMPLEX KIDS
-        </p>
-        <p className={styles.whyItem}>
-          ALWAYS A LICENSED REGISTERED NURSE ON SITE
-        </p>
-        <p className={styles.whyItem}>
-          FAMILY CENTERED, COLLABORATIVE APPROACH
-        </p>
-        <p className={styles.whyItem}>
-          THERAPEUTIC AND ADAPTIVE CURRICULUM DESIGNED TO MEET THE UNIQUE DEVELOPMENTAL,
-          MEDICAL, AND LEARNING NEEDS OF EACH CHILD.
-        </p>
-        <p className={styles.whyItem}>
-          TRAINED AND EXPERIENCED ON CONGENITAL HEART DISEASE AND MEDICAL EMERGENCIES
-        </p>
-        <p className={styles.whyItem}>
-          OUR COMMITMENT TO GOING ABOVE THE MINIMUM STANDARDS FOR HEALTH, CLEANLINESS, &amp; SAFETY
+    <section id="mission-section" className={styles.missionSection}>
+      <div className={styles.missionContent}>
+        <div className={styles.missionTitleWrapper}>
+          <h1 className={styles.missionTitle}>OUR MISSION</h1>
+        </div>
+        <p className={styles.missionText}>
+          LITTLE HEARTS IS A NEWLY ESTABLISHED NON-PROFIT CHILDCARE CENTER. WE PROVIDE CHILDCARE FOR CHILDREN WITH CONGENITAL HEART DEFECTS AND/OR COMPLEX MEDICAL NEEDS, ENSURING THAT THEY RECEIVE THE SPECIALIZED CARE THEY REQUIRE IN A SAFE, NURTURING, AND DEVELOPMENTALLY SUPPORTIVE ENVIRONMENT. IT IS DESIGNED TO BE A SAFE HAVEN FOR OUR HEART WARRIORS TO GROW, LEARN, AND THRIVE WHILE PROVIDING PARENTAL PEACE OF MIND WHILE AWAY.
         </p>
       </div>
     </section>

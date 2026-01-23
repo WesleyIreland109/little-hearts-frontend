@@ -1,5 +1,7 @@
 import styles from './GetInvolved.module.css';
 
+const donateUrl = 'https://givebutter.com/littleheartschildcare';
+
 const GetInvolved = () => (
   <div className={styles.container}>
     {/* Top banner */}
@@ -26,6 +28,38 @@ const GetInvolved = () => (
       </p>
     </section>
 
+    {/* Donations section moved from ForParents */}
+    <section className={styles.donationsSection}>
+      <div className={styles.donationsInner}>
+        <h2 className={styles.donationsTitle}>DONATIONS</h2>
+
+        <h3 className={styles.donationsMainHeading}>
+          LITTLE HEARTS WOULD NOT BE POSSIBLE WITHOUT YOU
+        </h3>
+
+        <p className={styles.donationsSubHeading}>
+          THANK YOU FOR SUPPORTING AND BELIEVING IN LITTLE HEARTS!
+        </p>
+
+        <div className={styles.donationsButtonRow}>
+          <a
+            href={donateUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.donateButton}
+          >
+            DONATE!
+          </a>
+        </div>
+
+        <p className={styles.donationsDisclaimer}>
+          *** OUR APPLICATION FOR TAX-EXEMPT STATUS UNDER SECTION 501(C)(3) IS PENDING WITH THE IRS. IF APPROVED,
+          THE EFFECTIVE DATE OF THE EXEMPTION WILL BE OUR DATE OF INCORPORATION (08/2025), AND DONATIONS MADE NOW
+          WILL BE TAX-DEDUCTIBLE AS PERMITTED BY LAW.***
+        </p>
+      </div>
+    </section>
+
     {/* Other section: Other Ways to Get Involved */}
     <section className={styles.otherWaysSection}>
       <div className={styles.otherBannerWrapper}>
@@ -39,7 +73,7 @@ const GetInvolved = () => (
       </div>
     </section>
 
-    {/* New section: Careers */}
+    {/* Careers section */}
     <section className={styles.careersSection}>
       <div className={styles.careersBannerWrapper}>
         <h2 className={styles.careersBannerTitle}>CAREERS</h2>

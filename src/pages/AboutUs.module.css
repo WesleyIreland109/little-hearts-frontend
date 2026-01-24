@@ -13,6 +13,77 @@
   padding-top: calc(80px + 2rem);
 }
 
+/* A LETTER TO OUR FAMILIES layout */
+.letterSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto 0 auto;
+}
+
+.letterInner {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  column-gap: 4rem;
+  align-items: flex-start;
+}
+
+.letterTextColumn {
+  text-align: center;
+}
+
+.letterTitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  color: #b6b39a;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.letterBody {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #acab93;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+.letterClosing {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #acab93;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1.9;
+  margin-top: 3rem;
+}
+
+.letterImageColumn {
+  text-align: center;
+}
+
+.letterImage {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  object-fit: cover;
+}
+
+.letterImageCaption {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+  font-weight: 400;
+  color: #b6b39a;
+  text-transform: uppercase;
+  margin-top: 1.8rem;
+}
+
 /* Centered mission section */
 .missionSection {
   display: flex;
@@ -243,6 +314,15 @@
   .aboutContainer {
     padding: 0 1.5rem 3rem 1.5rem;
     padding-top: calc(70px + 2.5rem);
+  }
+
+  .letterInner {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .letterImageColumn {
+    order: 2;
   }
 
   .whyTitle,

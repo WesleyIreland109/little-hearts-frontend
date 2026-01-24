@@ -46,9 +46,14 @@ const Header = () => {
     setMenuOpen(false);
   };
 
+  const handleLogoClick = () => {
+    navigate('/');
+    setMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
-      <div className={styles.logoSection}>
+      <div className={styles.logoSection} onClick={handleLogoClick} role="button" aria-label="Go to home page">
         <h1 className={styles.logoTitle}>Little Hearts Childcare Foundation</h1>
         <h2 className={styles.logoSubtitle}></h2>
       </div>

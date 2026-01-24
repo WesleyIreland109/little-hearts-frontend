@@ -222,9 +222,17 @@
   .menuButton {
     display: block;
     background: none;
-    border: none;
+    border: none;        /* no border when idle */
+    border-radius: 999px;
+    padding: 0;          /* let icon define size when idle */
     font-size: 1.8rem;
     color: #acab93;
+    margin-top: 1.5rem;
+  }
+
+  .menuButton.active {
+    border: 2px solid #acaa92; /* brown border only when open/active */
+    padding: 0.1rem 0.4rem;    /* tight circle when active */
   }
 
   .navList {

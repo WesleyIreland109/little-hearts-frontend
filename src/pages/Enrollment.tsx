@@ -50,16 +50,6 @@ const Enrollment: React.FC = () => {
             </button>
           </div>
 
-          <p className={styles.calloutDetails}>
-            ENROLLING
-            <br />
-            6-8 CHILDREN
-            <br />
-            AGES 18 MONTHS TO 3 YEARS
-            <br />
-            PROGRAM HOURS: M-F, 7:30-3:30
-          </p>
-
           <p className={styles.calloutFooter}>
             EXPECTED LAUNCH FALL 2026
           </p>

@@ -4,29 +4,6 @@ const donateUrl = 'https://givebutter.com/littleheartschildcare';
 
 const GetInvolved = () => (
   <div className={styles.container}>
-    {/* Top banner */}
-    <section className={styles.bannerSection}>
-      <div className={styles.bannerWrapper}>
-        <h1 className={styles.bannerTitle}>FUNDRAISIERS &amp; VOLUNTEERS</h1>
-      </div>
-    </section>
-
-    {/* Content */}
-    <section className={styles.contentSection}>
-      <p className={styles.mainLine}>
-        CHECK BACK HERE FOR INFORMATION ON OUR FUNDRAISERS
-      </p>
-
-      <p className={styles.subLine}>
-        IF YOU ARE INTERESTED IN VOLUNTEERING, PLEASE EMAIL US AT
-        <br />
-        DIRECTOR@LITTLEHEARTS-CHILDCARE.COM
-      </p>
-
-      <p className={styles.noteLine}>
-        **ALL VOLUNTEERS MUST UNDERGO A BACKGROUND CHECK**
-      </p>
-    </section>
 
     {/* Donations section moved from ForParents */}
     <section className={styles.donationsSection}>
@@ -57,19 +34,6 @@ const GetInvolved = () => (
           THE EFFECTIVE DATE OF THE EXEMPTION WILL BE OUR DATE OF INCORPORATION (08/2025), AND DONATIONS MADE NOW
           WILL BE TAX-DEDUCTIBLE AS PERMITTED BY LAW.***
         </p>
-      </div>
-    </section>
-
-    {/* Other section: Other Ways to Get Involved */}
-    <section className={styles.otherWaysSection}>
-      <div className={styles.otherBannerWrapper}>
-        <h2 className={styles.otherBannerTitle}>OTHER WAYS TO GET INVOLVED</h2>
-      </div>
-
-      <div className={styles.otherList}>
-        <p className={styles.otherItem}>SHARE US ON SOCIAL MEDIA!</p>
-        <p className={styles.otherItem}>AMAZON WISH LIST</p>
-        <p className={styles.otherItem}>FOLLOW OUR PARTNERS!</p>
       </div>
     </section>
 
@@ -107,6 +71,30 @@ const GetInvolved = () => (
         </p>
       </div>
     </section>
+
+    {/* Other section: Other Ways to Get Involved */}
+    <section className={styles.otherWaysSection}>
+      <div className={styles.otherBannerWrapper}>
+        <h2 className={styles.otherBannerTitle}>OTHER WAYS TO GET INVOLVED</h2>
+      </div>
+
+      <div className={styles.otherList}>
+        <p className={styles.otherItem}>SHARE US ON SOCIAL MEDIA!</p>
+        <p className={styles.otherItem}>FOLLOW OUR PARTNERS!</p>
+      </div>
+
+      <div className={styles.amazonButtonRow}>
+        <a
+          href="https://www.amazon.com/hz/wishlist/ls/2GWZCT0QGXAN5?ref_=wl_share"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.amazonButton}
+        >
+          AMAZON WISH LIST
+        </a>
+      </div>
+    </section>
+
   </div>
 );
 

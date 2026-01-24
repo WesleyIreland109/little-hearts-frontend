@@ -48,22 +48,6 @@ const AboutUs = () => (
         <p className={styles.servicesDetailBlock}>
           DETAILED AND PERSONALIZED CARE PLAN CREATED TOGETHER BY PARENTS AND MEDICAL STAFF!
         </p>
-
-        <p className={styles.serviceDetail}>
-          DAILY VITAL SIGN MONITORING, MEDICATION ADMINISTRATION, TRACHEOSTOMY/G-TUBE CARE, ACTIVITIES OF DAILY LIVING (REPOSITIONING, TOTAL AND PARTIAL CARE CHANGES), GASTRIC TUBE FEEDINGS, AND MUCH MORE!
-        </p>
-
-        <p className={styles.serviceDetail}>
-          EACH CHILD WILL HAVE A DETAILED AND PERSONALIZED CARE PLAN CREATED TOGETHER BY PARENTS AND MEDICAL STAFF!
-        </p>
-
-        <p className={styles.policyLink}>
-          CLICK <span className={styles.linkText}>HERE</span> FOR OUR PARENTAL UPDATE POLICY &amp; SICK CHILD AND STAFF POLICY
-        </p>
-
-        <p className={styles.serviceDetail}>
-          FULL ACCESS TO CLASSROOM CAMERAS AND PARENT PORTAL THAT INCLUDES DAILY VITAL SIGN, MEDICATION ADMINISTRATION, AND NURSING CARE DOCUMENTATION
-        </p>
       </div>
     </section>
   </div>

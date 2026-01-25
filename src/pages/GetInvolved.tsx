@@ -30,9 +30,8 @@ const GetInvolved = () => (
         </div>
 
         <p className={styles.donationsDisclaimer}>
-          *** OUR APPLICATION FOR TAX-EXEMPT STATUS UNDER SECTION 501(C)(3) IS PENDING WITH THE IRS. IF APPROVED,
-          THE EFFECTIVE DATE OF THE EXEMPTION WILL BE OUR DATE OF INCORPORATION (08/2025), AND DONATIONS MADE NOW
-          WILL BE TAX-DEDUCTIBLE AS PERMITTED BY LAW.***
+          *** Little Hearts is a registered 501(c)(3) nonprofit organization. 
+          Donations made directly to Little Hearts are tax-deductible to the extent allowed by law.***
         </p>
       </div>
     </section>

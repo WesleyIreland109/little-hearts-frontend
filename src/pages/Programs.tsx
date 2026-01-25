@@ -12,6 +12,10 @@ const Programs = () => (
     {/* Three classroom tiles (text only, images can be added later) */}
     <section className={styles.classroomsSection}>
       <div className={styles.classroomCard}>
+        <h2 className={styles.classroomTitle}>COMING SOON</h2>
+      </div>
+
+      {/* <div className={styles.classroomCard}>
         <h2 className={styles.classroomTitle}>INFANT</h2>
       </div>
 
@@ -21,7 +25,7 @@ const Programs = () => (
 
       <div className={styles.classroomCard}>
         <h2 className={styles.classroomTitle}>PRESCHOOL</h2>
-      </div>
+      </div> */}
     </section>
   </div>
 );

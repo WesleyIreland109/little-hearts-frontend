@@ -4,38 +4,7 @@ import styles from './Contact.module.css';
 const Contact = () => (
   <div className={styles.contactContainer}>
     <div className={styles.inner}>
-      {/* Left: Contact form panel */}
-      <section className={styles.formSection}>
-        <h1 className={styles.title}>CONTACT US</h1>
-
-        <form className={styles.form}>
-          <label className={styles.label}>
-            NAME
-            <input type="text" className={styles.input} />
-            <span className={styles.helperText}></span>
-          </label>
-
-          <label className={styles.label}>
-            PHONE NUMBER
-            <input type="tel" className={styles.input} />
-            <span className={styles.helperText}></span>
-          </label>
-
-          <label className={styles.label}>
-            EMAIL
-            <input type="email" className={styles.input} />
-            <span className={styles.helperText}></span>
-          </label>
-
-          <label className={styles.label}>
-            BRIEF MESSAGE
-            <textarea className={styles.textarea} rows={4} />
-            <span className={styles.helperText}></span>
-          </label>
-        </form>
-      </section>
-
-      {/* Right: Email & social info */}
+      {/* Right: Email & social info only */}
       <section className={styles.infoSection}>
         <div className={styles.emailBlock}>
           <p className={styles.emailHeading}>EMAIL US</p>
@@ -61,10 +30,28 @@ const Contact = () => (
 
           <div className={styles.socialLines}>
             <p className={styles.socialLabel}>INSTAGRAM</p>
-            <p className={styles.socialHandle}>@LITTLEHEARTS.CHILDCAREPROGRAM</p>
+            <p className={styles.socialHandle}>
+              <a
+                href="https://www.instagram.com/littlehearts.childcareprogram/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.emailLink}
+              >
+                @LITTLEHEARTS.CHILDCAREPROGRAM
+              </a>
+            </p>
 
             <p className={styles.socialLabel}>FACEBOOK</p>
-            <p className={styles.socialHandle}>@LITTLE HEARTS CHILDCARE FOUNDATION</p>
+            <p className={styles.socialHandle}>
+              <a
+                href="https://www.facebook.com/profile.php?id=61577602928042"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.emailLink}
+              >
+                @LITTLE HEARTS CHILDCARE FOUNDATION
+              </a>
+            </p>
           </div>
         </div>
       </section>
